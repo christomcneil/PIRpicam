@@ -8,11 +8,11 @@ import sys
 
 
 sensorPin = 18
-GPIO.setwarnings(False)
+GPIO.setwarnings(True)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(sensorPin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 camera = PiCamera()
-camera.resolution(2592,1944) 
+camera.resolution=(2592,1944) 
 
 
 def capture_still(): 
